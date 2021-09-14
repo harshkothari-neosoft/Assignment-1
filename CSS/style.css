@@ -1,0 +1,308 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ul {
+	list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #626d7c;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.container:after,
+.boxes:after,
+.log:after,
+.news:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header,
+.footer {
+	background: #1a1e24;
+	color: #fff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 28px;
+	float: left;
+    padding-top: 10px;
+    margin-left: -50px;
+}
+
+.nav {
+	float: right;
+}
+
+.nav a {
+	line-height: 62px;
+    padding-left: 30px;
+	color: #fff;
+	position: relative;
+}
+.nav a:hover{
+	color: silver;
+}
+
+.row {
+	background: #333 url(../Images/banner.jpeg) no-repeat 50% 50%;
+	background-size: cover;
+	height: 465px;
+	color: #fff;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.row h1 {
+	font-size: 52px;
+	font-weight: bold;
+	margin: 0 0 30px;
+}
+.row p {
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 400;
+	max-width: 715px;
+	margin: 0 auto 51px;
+}
+.row p strong {
+	font-weight: 600;
+}
+
+
+.btn {
+	display: inline-block;
+	border-radius: 4px;
+	line-height: 50px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 50px;
+	padding: 0 55px;
+	margin: 0 11px;
+}
+.btn-green {
+	background-color: #83c129;
+	box-shadow: 0 4px 0 #518719;
+}
+.btn-blue {
+	background-color: #068fd5;
+	box-shadow: 0 4px 0 #046b9f;
+}
+.btn:hover {
+	text-decoration: none;
+	opacity: .8;
+}
+
+.middle {
+	background: #fff;
+	padding-top: 80px;
+}
+
+.boxes {
+	margin-bottom: 75px
+}
+.boxes .box {
+	float: left;
+	width: 351px;
+	margin-left: 43px;
+	padding: 15px;
+	border-radius: 4px;
+	border: 1px solid #d9dbdf;
+	position: relative;
+}
+.boxes .box:first-child {
+	margin-left: 0;
+}
+
+.boxes img {
+	vertical-align: top;
+}
+.boxes .image {
+	margin-bottom: 13px;
+}
+.boxes .photo {
+	float: left;
+}
+.boxes .text {
+	float: right;
+	width: 258px;
+}
+.text .p1{
+    font-weight: bold;
+    font-family: cursive;
+}
+.p2{
+    font-family: cursive;
+}
+
+.news {
+	border-top: 2px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;
+	padding: 31px 0;
+	margin-bottom: 30px;
+}
+.news .sec {
+	float: left;
+	width: 352px;
+	margin-left: 42px;
+}
+.news .sec:first-child {
+	margin-left: 0;
+}
+
+.news .img {
+	float: left;
+	width: 98px;
+	text-align: center;
+}
+.news .text {
+	float: right;
+	width: 234px;
+	padding-top: 4px;
+}
+.news img {
+	border-radius: 50%;
+}
+.news a {
+	color: #626e7e;
+}
+.news span {
+	font-size: 14px;
+	color: #abb1bb;
+}
+.news p {
+	margin: 4px 0 0;
+}
+
+.featured {
+	padding: 26px 0;
+	margin-bottom: 34px;
+}
+.featured * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.featured ul li {
+	margin-right: 38px;
+}
+
+.featured .title {
+	margin-right: 20px;
+}
+
+.footer {
+	padding: 36px 0;
+}
+
+.footer-nav {
+	float: left;
+}
+.footer-nav .column {
+	float: left;
+	width: 140px;
+}
+.footer-nav .title {
+	font-size: 14px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.footer-nav ul {
+	font-size: 12px;
+}
+.footer-nav ul li {
+	margin-bottom: 7px;
+}
+.footer-nav a {
+	color: darkgray;
+}
+
+.web {
+	float: right;
+	margin:0 0 79px; 
+	padding:0;
+	list-style:none;
+}
+
+.web li {
+	display:inline-block;
+}
+
+.web li a {
+	font-style:normal;
+	font-weight:400;
+	text-decoration:none;
+	text-align:center;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: transparent;
+}
+
+.copyright {
+	clear: right;
+	text-align: right;
+	line-height: 20px;
+	font-size: 12px;
+	color: #8e959c;
+}
+.copyright a {
+	color: #8e959c;
+	margin-left: 8px;
+}
+
+
+/* Media */
+@media screen and (max-width:1020px){
+	.container{
+		float: none;
+		width: 900px;
+	}
+	.logo{
+		
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width:810px){
+	.container{
+		float: none;
+		width: 80%;
+	}
+	
+}
+
+@media screen and (max-width:510px){
+	.container{
+		float: none;
+		width: 80%;
+	}
+	
+}
